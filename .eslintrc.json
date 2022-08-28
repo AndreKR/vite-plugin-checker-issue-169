@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:vue/vue3-recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "vue",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": ["error", "tab"],
+        "comma-dangle": "off",
+        "no-tabs": ["error", { "allowIndentationTabs": true }],
+        "vue/html-indent" : ["error", "tab"],
+        "vue/multi-word-component-names": "off",
+        "vue/no-multiple-template-root": "error",
+        "@typescript-eslint/no-unused-vars": "warn",
+        "no-unused-vars": "warn",
+        "quotes": ["warn", "single", { "avoidEscape": true }],
+        "semi": "error"
+    }
+}
